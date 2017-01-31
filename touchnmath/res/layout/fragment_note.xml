@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/note_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    
+    <ImageView
+        android:id="@+id/note_slider02"
+        android:layout_width="50dp"
+        android:layout_height="990dp"
+        android:background="@drawable/note_handler_03"
+        android:contentDescription="@string/activity_no_image"/>
+
+     <ImageView
+        android:id="@+id/note_slider01_01"
+        android:layout_width="35dp"
+        android:layout_height="120dp"
+        android:background="@drawable/note_handler_01_00"
+        android:contentDescription="@string/activity_no_image"/>
+    
+     <ImageView
+        android:id="@+id/note_slider01_02"
+        android:layout_width="22dp"
+        android:layout_height="120dp"
+        android:background="@drawable/note_handler_01_02"
+        android:visibility="invisible"
+        android:contentDescription="@string/activity_no_image"/>
+    
+     <ImageView
+        android:id="@+id/note_slider01_03"
+        android:layout_width="35dp"
+        android:layout_height="120dp"
+        android:background="@drawable/note_handler_01_01"
+        android:visibility="invisible"
+        android:contentDescription="@string/activity_no_image"/>
+    
+     <!-- 투명 슬라이드 바(손잡이 위치 고정용) -->
+     <ImageView
+        android:id="@+id/note_invisible_slider"
+        android:layout_width="35dp"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:contentDescription="@string/activity_no_image"/>
+     <!-- 투명 슬라이드 바 -->
+    
+   <!--  <com.myscript.atk.maw.styleable.MathWidgetStyleable
+        android:id="@+id/myscript_note"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"/> -->
+    
+    <!-- 640*1280으로 하면 디바이스 크기의 4배 -->
+    <ImageView 
+        android:id="@+id/note_back"
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:background="@drawable/background_tiled"
+        android:contentDescription="@string/activity_no_image"/>
+    
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >       
+       
+	     <Button
+	        android:id="@+id/note_clearButton"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentEnd="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginEnd="10dp"
+	        android:background="@drawable/btn_eraser"
+	        android:textColor="#ff9393"
+	        android:visibility="invisible"
+	        android:text="" />
+	     
+	     <Button
+	        android:id="@+id/note_undoButton"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentEnd="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginEnd="45dp"
+	        android:background="@drawable/btn_undo"
+	        android:textColor="#ff9393"
+	        android:visibility="invisible"
+	        android:text="" />
+	     
+	</RelativeLayout>
+
+</FrameLayout>

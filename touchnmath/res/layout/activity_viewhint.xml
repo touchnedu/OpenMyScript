@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_background"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/view_hint_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/prev_selector"
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/view_hint_title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="17dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="힌트보기 테스트" />
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" 
+        android:background="#FFF">
+            
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            
+		        <WebView
+		            android:id="@+id/view_hint_wv"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="2dp"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginRight="12dp" />
+        
+        </ScrollView>
+        
+        <ImageView
+            android:id="@+id/view_hint_prev"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="200dp"
+            android:src="@drawable/btn_hint_left" 
+            android:contentDescription="@null" />
+            
+        <ImageView
+            android:id="@+id/view_hint_next"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/btn_hint_right"
+            android:contentDescription="@null" />
+        
+    </FrameLayout>
+
+</LinearLayout>

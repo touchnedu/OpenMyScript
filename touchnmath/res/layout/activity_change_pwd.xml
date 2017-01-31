@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DE3CF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_change"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prev_selector"
+            android:gravity="center" />
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5DE3CF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5DE3CF"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5DE3CF"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <EditText
+                    android:id="@+id/txt_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.07"
+                    android:background="@drawable/text_box"
+                    android:ems="10"
+                    android:hint="현재 비밀번호를 입력해주세요."
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#cecece"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.27"
+                    android:background="@drawable/text_box"
+                    android:ems="10"
+                    android:hint="새로운 비밀번호를 입력해주세요."
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#cecece"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/txt_rpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="0.27"
+                    android:background="@drawable/text_box"
+                    android:ems="10"
+                    android:hint="비밀번호를 한번 더 입력해주세요."
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#cecece"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5DE3CF"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <Button
+                    android:id="@+id/pwd_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/change_pwd_btn" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

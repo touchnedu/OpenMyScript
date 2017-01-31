@@ -1,0 +1,80 @@
+<com.touchnedu.gradea.studya.math.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:layout_marginTop="100dp"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		
+        <!-- This acts as Actionbar -->
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#00c5b3"
+            android:orientation="horizontal" > -->
+            
+        <LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="left"	   
+			android:background="@drawable/bar_book" >
+            
+            <!-- <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="toggleMenu"
+	            android:text="Menu"
+	            android:id="@+id/button_menu" /> -->
+
+            <ImageView
+                android:id="@+id/button_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="10dip"
+                android:onClick="toggleMenu"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_menu_02" />
+
+           <!-- <TextView
+               android:id="@+id/activity_main_content_title"
+               style="@style/phone_txt_white"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:text="학년선택"
+               android:textSize="16sp" /> -->
+            
+        </LinearLayout>       
+        
+        <!-- This is where fragment will show up -->
+        <FrameLayout
+		    android:id="@+id/activity_main_content_fragment"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+        
+    	</FrameLayout>
+        
+    </LinearLayout>
+
+</com.touchnedu.gradea.studya.math.MainLayout>

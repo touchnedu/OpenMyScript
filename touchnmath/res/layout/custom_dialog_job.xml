@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/custom_dialog_bg"
+    android:layout_margin="20dp"
+    android:padding="0dp">
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#00998E"
+            android:padding="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:text="선택하세요."
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E5E5E5" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="15dp"
+		        android:orientation="horizontal">
+        
+		        <ImageView
+		            android:id="@+id/naverjoin_student_off"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="visible"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_off" />
+		        
+		        <ImageView
+		            android:id="@+id/naverjoin_student_on"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="gone"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_on" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16dp"
+		            android:textColor="#555"
+		            android:text="학생(초, 중, 고)" />
+        
+    		</LinearLayout>
+        
+        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="15dp"
+		        android:orientation="horizontal">
+        
+		        <ImageView
+		            android:id="@+id/naverjoin_teacher_off"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="visible"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_off" />
+		        
+		        <ImageView
+		            android:id="@+id/naverjoin_teacher_on"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="gone"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_on" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16dp"
+		            android:textColor="#555"
+		            android:text="선생님" />
+        
+    		</LinearLayout>
+        
+        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="15dp"
+		        android:orientation="horizontal">
+        
+		        <ImageView
+		            android:id="@+id/naverjoin_parent_off"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="visible"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_off" />
+		        
+		        <ImageView
+		            android:id="@+id/naverjoin_parent_on"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="gone"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_on" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16dp"
+		            android:textColor="#555"
+		            android:text="학부모" />
+        
+    		</LinearLayout>
+        
+        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+        
+		        <ImageView
+		            android:id="@+id/naverjoin_etc_off"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="visible"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_off" />
+		        
+		        <ImageView
+		            android:id="@+id/naverjoin_etc_on"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:layout_marginRight="15dp"
+		            android:visibility="gone"
+		            android:layout_marginTop="3dp"
+		            android:src="@drawable/radio_on" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="16dp"
+		            android:textColor="#555"
+		            android:text="대학생 및 일반인" />
+        
+    		</LinearLayout>
+        
+    </LinearLayout>
+        
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E5E5E5" />
+    
+    <LinearLayout		    
+		    android:id="@+id/chapter_preview_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		    
+		    <Button
+		        android:id="@+id/naver_join_cancel"
+		        android:layout_width="fill_parent"
+		        android:layout_height="52dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/btn_style_left"
+		        android:textSize="15dp"
+		        android:textColor="#00C5B3"
+		        android:text="취소" />
+		    
+		    <View
+	        	android:layout_width="1dip"
+	        	android:layout_height="fill_parent"
+	        	android:background="#E5E5E5" />
+    
+		    
+		    <Button
+		        android:id="@+id/naver_join_ok"
+		        android:layout_width="fill_parent"
+		        android:layout_height="52dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/btn_style_right"
+		        android:textSize="15dp"
+		        android:textColor="#00C5B3"
+		        android:text="확인" />
+		    
+    </LinearLayout>
+    
+
+</LinearLayout>

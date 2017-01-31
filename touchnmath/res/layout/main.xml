@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:hint="연락처"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:hint="이메일"
+            android:singleLine="true"
+            />
+        
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="추가"
+            android:onClick="onClick" 
+            />
+        
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top"        
+        />
+</RelativeLayout>
+
+
+
+
+
+
+

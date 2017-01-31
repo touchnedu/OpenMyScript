@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp" 
+    android:listSelector="#00000000">
+    
+    <ImageView
+        android:id="@+id/listVw_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="@string/emptyStr" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/listVw_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ffff"
+            android:textSize="15dp"
+            android:textColor="#555"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+    
+</LinearLayout>

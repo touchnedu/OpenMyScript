@@ -1,0 +1,192 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.touchnedu.gradea.studya.math"
+    android:versionCode="23"
+    android:versionName="1.2.3" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 디바이스 UUID를 얻기 위한 권한 획득 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 구글 계정 정보를 얻기 위한 권한 획득 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.TouchnEduActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.modules.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- white Skin -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.modules.MainActivityWhite"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.modules.BookCaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.AllHintActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.EnterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 로그인 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 회원가입 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.JoinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 비밀번호 재설정 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.FindPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 시작하기 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 비밀번호변경 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.ChangePwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 회원탈퇴 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.UserQuitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 스킨선택 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.membership.UserSkinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HoloLightTheme" >
+        </activity>
+
+        <!-- 투토리얼 메뉴 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.TutorialMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <!-- 공지사항 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.NoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 개인정보보호 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.PersonalInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 개인정보보호 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.PersonalInfoForJoinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 이용약관 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.AgreeInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 이용약관 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.AgreeForJoinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 계정설정 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.OptionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 문의하기 -->
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.ContactActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.data.DBInsert"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.data.DBDelete"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.modules.CustomNavigationDrawer"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.touchnedu.gradea.studya.math.modules.CustomSlidingMenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 네이버 아이디로 로그인 하기 위한 액티비티 등록 -->
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app" />
+        
+        <meta-data android:name="igaworks_app_key" android:value="905758852" />
+				<meta-data android:name="igaworks_hash_key" android:value="e5113d4561c4480a" />
+        
+    </application>
+
+</manifest>

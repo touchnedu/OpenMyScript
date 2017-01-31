@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DE3CF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_quit"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/prev_selector"
+            android:gravity="center" />
+        
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="245dp"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/quit_textbg_01" />
+                
+		            <TextView
+		                android:gravity="center_horizontal"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_marginTop="70dp"
+		                android:padding="15dp"
+		                android:textColor="#555"
+		                android:textSize="15dp"
+		                android:lineSpacingExtra="4dp"
+		                android:text="@string/user_quit_warning" />
+		            
+		            <TextView
+		                android:gravity="center"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:layout_marginTop="150dp"
+		                android:textSize="16dp"
+		                android:textColor="#FF6000"
+		                android:text="@string/user_quit_question" />
+                
+            </FrameLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#666"
+                android:textSize="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/user_quit_email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#666"
+                android:textSize="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/user_quit_claim" />
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <Button
+                    android:id="@+id/quit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/user_quit_btn" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+
+</LinearLayout>

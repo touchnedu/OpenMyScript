@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/custom_dialog_bg"
+    android:layout_margin="20dp"
+    android:padding="0dp">
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+        <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+            <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="20dp"
+		            android:textColor="#000000"
+		            android:padding="12dp"
+		            android:layout_marginBottom="6dp"
+		            android:layout_marginTop="6dp"
+		            android:layout_marginLeft="5dp"
+		            android:text="@string/last_quiz_alert"
+		            android:textStyle="bold" />
+            
+         		<ImageView
+			        	android:id="@+id/chapter_preview_cancel"
+			        	android:layout_width="22dp"
+			        	android:layout_height="22dp"
+			        	android:layout_marginLeft="263dp"
+			        	android:layout_marginTop="8dp"
+			        	android:src="@drawable/btn_close_01" />
+    
+		    </FrameLayout>
+        
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E5E5E5" />
+    
+    <TextView
+        android:id="@+id/chapter_preview_txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="@string/next_quiz_question" />
+    
+    <ImageView
+        android:id="@+id/chapter_preview_img"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="10dp"
+        android:background="#E5E5E5" />
+    
+    <LinearLayout		    
+		    android:id="@+id/chapter_preview_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		    
+		    <Button
+		        android:id="@+id/chapter_preview_list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="52dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/btn_style_left"
+		        android:textSize="15dp"
+		        android:text="@string/goto_chapterlist" />
+		    
+		    <View
+	        	android:layout_width="1dip"
+	        	android:layout_height="fill_parent"
+	        	android:background="#E5E5E5" />
+    
+		    
+		    <Button
+		        android:id="@+id/to_chapter_ok"
+		        android:layout_width="fill_parent"
+		        android:layout_height="52dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/btn_style_right"
+		        android:textSize="15dp"
+		        android:text="@string/goto_nextchapter" />
+		    
+    </LinearLayout>
+    
+
+</LinearLayout>

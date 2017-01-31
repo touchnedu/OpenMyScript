@@ -1,0 +1,129 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- <style name="AppTheme" parent="android:Theme.Light" /> -->
+    <style name="HoloTheme" parent="android:Theme.Holo" />
+    <style name="HoloLightTheme" parent="android:Theme.Holo.Light" />    
+        
+    <style name="font_top">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    
+    <style name="list_txt">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_txt_orage">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FF8400</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_txt_orage_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF8400</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_txt_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    
+    <style name="list_txt_center">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#343434</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="list_txt_white">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="phone_txt_white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="find_pwd_txt">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#00998E</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="list_big_font">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="list_big_font_orange">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FE8709</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="list_big_font_left">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_big_font_left_center">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="list_book_title_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="spinner_joblist">
+        <item name="android:background">@drawable/select_box</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+</resources>

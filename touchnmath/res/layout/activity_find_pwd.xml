@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DE3CF"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"	   
+		android:background="@drawable/bar_reset" >
+		
+		<Button
+	        android:id="@+id/btn_prev"        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:gravity="center"
+	        android:layout_marginTop="0dip"
+			android:layout_marginLeft="0dip"			      
+	        android:background="@drawable/prev_selector" />    				
+	    	    
+	</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5DE3CF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5DE3CF"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5DE3CF"
+                android:orientation="vertical"
+                android:padding="20dp" >
+                
+                <TextView
+		            android:id="@+id/call_reg_name_01"
+		            style="@style/find_pwd_txt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginLeft="26dp"
+		            android:layout_marginTop="16dp"
+		            android:gravity="left"
+		            android:text="비밀번호를 잊으셨나요?"
+		            android:textSize="14sp" />
+                
+                <TextView
+		            android:id="@+id/call_reg_name_02"
+		            style="@style/phone_txt_white"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginLeft="26dp"
+		            android:layout_marginTop="16dp"
+		            android:gravity="left"
+		            android:text="가입한 이메일 주소로 비밀번호를 보내드려요."
+		            android:layout_marginBottom="5dp"
+		            android:textSize="14sp" />
+                
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.07"
+                    android:background="@drawable/text_box"
+                    android:ems="10"
+                    android:hint=" 가입한 이메일 주소를 입력해주세요."
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#cecece"
+                    android:textSize="14sp" />
+
+        	</LinearLayout>
+        	
+            <LinearLayout
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:background="#5DE3CF"
+	              android:orientation="vertical"
+	              android:padding="20dp" >
+		    
+			    <Button
+			        android:id="@+id/find_button"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="0dp"
+			        android:background="@drawable/find_pwd_btn" />
+			</LinearLayout>
+
+            
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

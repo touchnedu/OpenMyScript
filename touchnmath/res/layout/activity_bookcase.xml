@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toold="http://schemas.android.com/tools"
+    android:id="@+id/layout_bookcase"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- 메인 메뉴 버튼, touchnmath 텍스트 이미지 배치 -->
+		<FrameLayout android:id="@+id/bookcase_background"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	   	  android:orientation="vertical"
+	   	  android:background="@drawable/bg_simple02">
+	    
+				<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="3dip"
+						android:layout_marginStart="6dip"
+            android:src="@drawable/menu_selector"
+            android:visibility="visible"
+            android:contentDescription="@null" />
+		
+				<TextView
+			      android:id="@+id/bookcase_title_wv"
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      android:layout_marginTop="13dp"
+			      android:layout_marginStart="50dp"
+			      android:layout_marginEnd="50dp"
+			      android:gravity="center"
+			      android:textSize="18dp"
+			      android:text="@string/navi_section1"
+			      android:textColor="#FFFFFF" />
+				
+				<ImageView
+		    		android:id="@+id/hidden_btn"
+			      android:layout_width="30dp"
+			      android:layout_height="30dp"
+			      android:layout_gravity="right"
+			      android:src="@drawable/btn_transparent"
+			      android:contentDescription="@null" />
+				
+    </FrameLayout>
+    <!-- 메인 메뉴 버튼, touchnmath 텍스트 이미지 배치 -->
+		
+		<!-- 책장 영역 시작 -->
+		<FrameLayout
+		    android:id="@+id/bookcase_of_webview"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:layout_gravity="start"
+		    android:layout_marginTop="53dp"
+		    android:layout_marginBottom="2dp" >
+				
+		    <WebView 
+	      	  android:id="@+id/bookcase_wv"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"	/>
+		   
+		    <View
+		        android:id="@+id/background_line"
+		        android:layout_gravity="bottom"
+		        android:layout_width="fill_parent"
+		        android:layout_height="76dp"
+		        android:visibility="gone"
+		        android:background="#CCCCCC" />
+		    
+		    <!-- 풀던 문제 바로 가기 -->
+		    <LinearLayout
+		        android:id="@+id/save_quiz_layout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="20dp"
+		        android:background="#FFFFFF"
+		        android:visibility="gone"
+		        android:layout_gravity="bottom">
+		        
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_weight="3"
+		            android:textSize="14dp"
+		            android:textColor="#000000"
+		            android:text="@string/goto_saved_quiz"/>
+		        
+     		    <ImageView
+						    android:id="@+id/goto_saved_quiz"
+						    android:layout_width="0dp"
+						    android:layout_height="30dp"
+						    android:layout_weight="1"
+						    android:layout_marginTop="0dp"
+						    android:layout_marginLeft="12dp"
+						    android:onClick="onClick"
+						    android:background="@drawable/ok_btn_off" />
+		        
+		    </LinearLayout>
+		    
+		    <ImageView
+		        android:id="@+id/cancel_saved_quiz"
+		        android:layout_gravity="bottom|right"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:layout_marginBottom="75dp"
+		        android:onClick="onClick"
+		        android:visibility="gone"
+		        android:background="@drawable/x_btn" />
+				
+    </FrameLayout>
+    <!-- 책장 영역 끝 -->
+    
+</RelativeLayout>
+

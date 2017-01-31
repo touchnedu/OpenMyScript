@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item >터치앤매쓰 소개하하</item>
+        <item >학년선택</item>
+        <item >단원목차보기</item>
+        <item >공지사항</item>
+        <!-- <item >문의하기</item> -->
+        <item >개인정보취급방침</item>
+        <item >이용약관</item>
+        <!-- <item >설정</item> -->
+    </string-array>
+</resources>

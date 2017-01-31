@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_login"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login_btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/prev_selector"
+            android:gravity="center" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical" >
+          
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFF"
+              android:orientation="vertical"
+              android:padding="20dp" >
+
+              <EditText
+                  android:id="@+id/txt_username"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_weight="0.07"
+                  android:background="@drawable/text_box"
+                  android:ems="10"
+                  android:hint=" 이메일"
+                  android:inputType="textEmailAddress"
+                  android:lines="1"
+                  android:paddingLeft="5dp"
+                  android:singleLine="true"
+                  android:textColorHint="#cecece"
+                  android:textSize="14dp" />
+
+              <EditText
+                  android:id="@+id/txt_password"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_weight="0.27"
+                  android:background="@drawable/text_box"
+                  android:ems="10"
+                  android:hint=" 비밀번호"
+                  android:inputType="textPassword"
+                  android:lines="1"
+                  android:paddingLeft="5dp"
+                  android:singleLine="true"
+                  android:textColorHint="#cecece"
+                  android:textSize="14dp" />
+
+      	</LinearLayout>
+      	
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp" >
+	    
+				    <Button
+				        android:id="@+id/login_button"
+				        android:layout_width="match_parent"
+				        android:layout_height="45dp"
+				        android:layout_marginLeft="0dp"
+				        android:background="@drawable/login_btn" />
+				    
+				    <!-- <Button
+				        android:id="@+id/login_button_naver"
+				        android:layout_width="wrap_content"
+				        android:layout_height="45dp"
+				        android:layout_marginStart="0dp"
+				        android:layout_marginTop="10dp"
+				        android:background="@drawable/naver_login_btn" /> -->
+		    
+				</LinearLayout>
+
+		</LinearLayout>
+
+</LinearLayout>

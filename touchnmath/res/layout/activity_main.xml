@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toold="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- 메인 메뉴 버튼, touchnmath 텍스트 이미지 배치 -->
+		<FrameLayout android:id="@+id/back_of_all"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	   	  android:orientation="vertical"
+	   	  android:background="@drawable/bg_simple01">
+	    
+		  	<!-- <ImageView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+       	    android:layout_marginTop="1dp"
+       	    android:layout_marginStart="5dp"
+						android:contentDescription="@null"
+						android:background="@drawable/main_menu_02" /> -->
+						
+				<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="3dip"
+						android:layout_marginStart="6dip"
+            android:src="@drawable/menu_selector"
+            android:visibility="visible"
+            android:contentDescription="@null" />
+        
+		  	<!-- 앱 타이틀 이미지 touchnmath -->
+        <ImageView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+       	    android:layout_marginTop="12dp"
+		    		android:layout_gravity="center_horizontal"
+						android:contentDescription="@null"
+						android:background="@drawable/main_menu_logo"
+						android:visibility="invisible" />
+						  
+		    
+    </FrameLayout>
+    <!-- 메인 메뉴 버튼, touchnmath 텍스트 이미지 배치 -->
+
+		<!-- 하단 툴바 : 이전, 다음, 힌트, 정답 등 -->
+		<include
+	  		android:id="@+id/myscript_math_toolbar"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentBottom="true"
+	      layout="@layout/main_tool_bar" />
+		<!-- 하단 툴바 -->
+		
+		<!-- 챕터 텍스트 -->
+    			
+		    <FrameLayout
+		        android:id="@+id/back_of_chapter"
+				    android:layout_width="270dp"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="50dp"
+				    android:layout_gravity="left">
+					      
+		        <!-- 수식이 들어갈 경우 이미지로 대체하기 위한 이미지뷰 -->
+						<ImageView
+						    android:id="@+id/image_chapter"
+						    android:layout_width="match_parent"
+					      android:layout_height="50dp"
+					      android:contentDescription="@null"
+					      android:layout_marginTop="1dp"
+					      android:background="#00000000" />
+						<!-- ** -->
+						
+						<TextView
+					      android:id="@+id/text_chapter"
+					      android:layout_width="match_parent"
+					      android:layout_height="wrap_content"
+					      android:layout_marginTop="15dp"
+					      android:textSize="15dp"
+					      android:text=""
+					      android:textColor="#FFFFFF" />
+						
+					  <ImageView
+						  	android:id="@+id/title_chapter"
+					      android:layout_width="wrap_content"
+					      android:layout_height="wrap_content"/>
+						
+				</FrameLayout>
+		      
+		<!-- 챕터 텍스트 -->
+			
+		<!-- 챕터 아이콘과 챕터 텍스트 부분 시작 -->
+	<!-- 	<LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="left"
+	    	android:orientation="horizontal"
+	    	android:layout_marginTop="56dp">
+		
+	    	<ImageView
+	      	  android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+		    		android:layout_marginLeft="16dp"
+	        	android:src="@drawable/icon_chapter01"
+	        	android:contentDescription="@string/activity_no_image" />
+	         
+		</LinearLayout> -->
+		<!-- 챕터 아이콘과 챕터 텍스트 부분 끝 -->
+		
+		<!-- 문제 영역 시작 -->
+		<FrameLayout
+		    android:id="@+id/back_of_webview"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_gravity="start"
+		    android:layout_marginTop="53dp"
+		    android:layout_marginBottom="2dp"
+		    android:layout_above="@id/myscript_math_toolbar" >
+	    
+	 	    <ScrollView
+	      	  android:id="@+id/view_left_scroll"
+	      	  android:layout_width="fill_parent"
+	      	  android:layout_height="fill_parent">
+				
+		        <LinearLayout  
+		            android:id="@+id/webview_layout"
+			    			android:layout_width="fill_parent"
+			    			android:layout_height="fill_parent"
+		        		android:gravity="start"
+			    			android:orientation="vertical">
+			    			
+								<!-- 아래쪽 여백 줘서 스크롤 바 만들어야 함 -->		        
+					    	<WebView 
+					      	  android:id="@+id/math_content"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:layout_marginStart="18dp"
+					        	android:layout_marginEnd="10dp"	/>
+					    	
+		    		</LinearLayout>
+		    		
+				</ScrollView>
+				
+	    	<FrameLayout
+	    			android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="vertical"
+    				android:layout_gravity="start"
+    				android:layout_marginTop="20dp" >
+			    	
+			    	<ImageView
+				        android:id="@+id/answer_back"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/answerview_back"
+				        android:contentDescription="@string/activity_no_image"/>
+			    	
+			    	<ImageView
+				        android:id="@+id/answerbox_img"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/answerview_back"
+				        android:contentDescription="@string/activity_no_image"/>
+			    	
+			    	<ImageView
+				        android:id="@+id/answer_img"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:contentDescription="@string/activity_no_image"/>
+	    	    
+	    	</FrameLayout>
+				
+    </FrameLayout>
+    <!-- 문제 영역 끝 -->
+    
+		<!-- 마이스크립트 위젯, 북마크 -->
+		<FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	   	  android:orientation="vertical">
+		    
+		    <com.myscript.atk.maw.styleable.MathWidgetStyleable
+		        android:id="@+id/myscript_maw"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="40dp"
+		        android:layout_marginBottom="42dp"/>
+		    
+		   <!--  <ImageView
+	   		    android:id="@+id/bookmark_ani"
+	   		    android:layout_width="200dp"
+	   		    android:layout_height="200dp"
+	   		    android:layout_marginTop="-39dp"
+	   		    android:layout_marginEnd="-20dp"
+	   		    android:layout_gravity="end|top"
+	   		    android:contentDescription="@null"
+	   		    android:background="@drawable/bookmark_ani" /> -->
+		    
+		    <ImageView
+		        android:id="@+id/bookmark_img01"
+		        android:layout_width="45dp"
+		        android:layout_height="45dp"
+		        android:layout_gravity="end|top"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginEnd="16dp"
+		        android:gravity="end"
+		        android:background="@drawable/favorite_01"
+		        android:contentDescription="@null" />
+    
+		    <ImageView
+		        android:id="@+id/bookmark_img02"
+		        android:layout_width="45dp"
+		        android:layout_height="45dp"
+		        android:layout_gravity="end|top"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginEnd="16dp"
+		        android:gravity="end"
+		        android:background="@drawable/favorite_02"
+		        android:contentDescription="@null" />
+    
+    </FrameLayout>
+    <!-- 마이스크립트 위젯, 북마크 -->
+    
+    <!-- 커스텀 스크롤바 Fragment -->
+    <FrameLayout
+				android:layout_width="22dp"
+				android:layout_height="match_parent"
+   			android:layout_marginTop="63dp"
+   			android:layout_marginBottom="63dp">     
+	     	 
+	    	<fragment
+	      	  android:name="com.touchnedu.gradea.studya.math.modules.CustomScroll"
+		        android:id="@+id/leftScrollBar"
+		        android:layout_width="match_parent"
+	  	      android:layout_height="match_parent"/>
+
+	  </FrameLayout>
+	  <!-- 커스텀 스크롤바 Fragment -->
+    
+    <!-- 연습장 Fragment  -->
+    <FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" >     
+   
+	   		<fragment
+	        	android:name="com.touchnedu.gradea.studya.math.modules.NoteFragment"
+	        	android:id="@+id/note_fragment"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent" />
+	   		    		    
+     </FrameLayout>
+     <!-- 연습장 Fragment  -->
+     
+     <!-- 힌트 웹뷰 -->
+     <FrameLayout
+         android:id="@+id/hintViewArea"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         
+         <ImageView
+             android:id="@+id/hint_backgroundcolor"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#64000000"
+             android:contentDescription="@string/activity_no_image"/>
+         
+         <ImageView
+             android:id="@+id/hint_background"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/hint_popup_01"
+             android:contentDescription="@string/activity_no_image"/>
+         
+         <ImageView
+             android:id="@+id/hint_closebutton"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_gravity="end|top"
+             android:background="@drawable/btn_x"
+             android:layout_marginTop="8dp"
+             android:layout_marginEnd="16dp"
+             android:contentDescription="@string/activity_no_image"/>
+         
+         <WebView 
+             android:id="@+id/hint_webview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginStart="5dp"
+             android:layout_marginTop="55dp"
+             android:layout_marginEnd="5dp"
+             android:layout_marginBottom="45dp"/>
+         
+     </FrameLayout>
+     <!-- 힌트 웹뷰 -->
+
+</RelativeLayout>
+
+    <!--
+         Math widget (Available attributes)
+
+        // Text
+        widget:fontName             Font.ttf filename in assets folder. 
+                                    Default is STIXGeneral.ttf and use default application font if set to empty or invalid value.
+        widget:textColor            Default is #FF4B5775
+        widget:transientColor       Default is #FFAAAAAA
+        
+        // Ink
+        widget:inkColor             Same as textColor if set and #FF4B5775 otherwise.
+        widget:inkThickness         Default is 10
+        
+        // Write area
+        widget:backgroundColor      Default is #FFFFFFFF
+        widget:backgroundDrawable   Reference to a resource pattern or png file. Default is millimeter_background.
+        widget:paddingRatioTop      x percent of the width of the screen (with 0 <= x <= 100). Default is 5
+        widget:paddingRatioBottom   x percent of the height of the screen (with 0 <= x <= 100). Default is 5
+        widget:paddingRatioLeft     x percent of the height of the screen (with 0 <= x <= 100). Default is 10
+        widget:paddingRatioRight    x percent of the height of the screen (with 0 <= x <= 100). Default is 10
+        
+        // Baseline
+        widget:baselineColor        Default is #FFAAAAAA
+        widget:baselineThickness    x > 0. Default is 1.
+        
+        // Palm rejection
+        widget:palmRejectionEnabled Enabled by default.
+        widget:palmRejectionHand    Right handed by default.
+        
+        // Recognition timeout
+        widget:recoTimeout          x >= 0 ms. Default is 0 (deactivated).
+        
+        // Solver
+        widget:decimalsCount        0 <= x <= 6. Default is 3.
+        widget:angleUnit            Possibles values are "degree" or "radian". Default is "degree".
+        widget:solverEnabled        "true" or "false" depending on whether the solver should be enabled or not. 
+    -->

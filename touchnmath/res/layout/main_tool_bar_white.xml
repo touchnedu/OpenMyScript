@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/myscript_prevButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn_01_prev"
+        android:layout_marginEnd="12dp" />
+    
+    <Button
+        android:id="@+id/myscript_resetButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn_01_refresh"
+        android:layout_marginEnd="12dp"
+        android:text="" />
+       
+    <Button
+        android:id="@+id/myscript_hintButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn_01_hint"
+        android:layout_marginEnd="12dp"
+        android:text="" />
+    
+    <Button
+        android:id="@+id/myscript_solButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn_01_correct_check"
+        android:layout_marginEnd="12dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/myscript_nextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_btn_01_next"
+        android:text="" />
+    
+ 
+</LinearLayout>
